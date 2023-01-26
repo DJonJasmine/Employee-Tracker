@@ -1,21 +1,8 @@
-const mysql = require('mysql2');
 const inquirer = require('inquirer');
 require('console.table');
 // port
 const PORT = process.env.PORT || 3001;
 
-// connection to database
-const db = mysql.createConnection(
-  {
-    host: 'localhost',
-    // MySQL username,
-    user: 'root',
-    // MySQL password
-    password: '',
-    database: 'staff_db'
-  },
-  console.log(`Connected to the staff_db database.`)
-);
 
 // prompt questions
 const promptMessages = () => {
@@ -98,6 +85,12 @@ const promptMessages = () => {
     }
 }) 
 };
+promptMessages();
 
-
-
+const viewAllEmployees = () => {
+  db.query('SELECT * FROM department', function (err, results) {
+    console.table(results);
+    console.log(`\n`);
+    promptMessages();
+  })
+}

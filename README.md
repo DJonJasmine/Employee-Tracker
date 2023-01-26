@@ -24,7 +24,7 @@ npm, [node.js website](https://nodejs.org/en/).
 
 mysql, [MySQL2 package](https://www.npmjs.com/package/mysql2).
 
-[Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
+inquirer, [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
 
 console table, [console.table package](https://www.npmjs.com/package/console.table) to print MySQL rows to the console.
 
@@ -35,7 +35,7 @@ To use the application npm is required. Once npm is installed open the powershel
 Pull the databases by using commands below
 
 ```
-SOURCE schema.sql
+SOURCE db/schema.sql
 ```
 ```
 SOURCE seeds.sql
@@ -56,7 +56,7 @@ If you come across a bug or just have any feedback, support can be contacted at 
 
 MIT License
 
-Copyright (c) 2022 DJonJasmine
+Copyright (c) 2023 DJon Jasmine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
