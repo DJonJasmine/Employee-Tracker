@@ -4,7 +4,7 @@ VALUES  ('Operations'),
         ('Marketing'),
         ('Executive');
 
-INSERT INTO role (title, salary, department_id)
+INSERT INTO role (job_title, salary, department_id)
 VALUES ('General Manager', 80000, 1),
        ('Team Lead Analyst', 70000, 1),
        ('Sales Representative', 35000, 1),
